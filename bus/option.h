@@ -28,6 +28,7 @@ extern gchar *g_cache;
 extern gboolean g_mempro;
 extern gboolean g_verbose;
 extern gint   g_dbus_timeout;
+extern gchar *g_address;
 
 G_END_DECLS
 #endif
