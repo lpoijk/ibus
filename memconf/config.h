@@ -21,6 +21,7 @@
 #define MEMCONF_CONFIG_H_
 
 #include <map>
+#include <set>
 #include <string>
 
 #include <ibus.h>
@@ -30,6 +31,8 @@ struct IBusConfigMemConf {
   // We have to use pointer type here for |entries| since g_object_new() uses
   // malloc rather than new to create IBusConfigMemConf object.
   std::map<std::string, GValue*>* entries;
+  std::set<std::string>* unread;
+  std::set<std::string>* unwritten;
 };
 
 IBusConfigMemConf* ibus_config_memconf_new(IBusConnection* connection);

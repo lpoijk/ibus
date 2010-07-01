@@ -182,6 +182,10 @@ struct _IBusConfigServiceClass {
                                const gchar          *section,
                                const gchar          *name,
                                IBusError           **error);
+    gboolean    (* get_unused)(IBusConfigService    *config,
+                               GValue               *unread,
+                               GValue               *unwritten,
+                               IBusError           **error);
 
     /*< private >*/
     /* padding */
@@ -217,4 +221,3 @@ void                 ibus_config_service_value_changed
 
 G_END_DECLS
 #endif
-
