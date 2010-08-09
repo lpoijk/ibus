@@ -651,7 +651,9 @@ bus_input_context_emit_signal (BusInputContext *context,
         g_dbus_message_set_body (message, parameters);
 
     gboolean retval =  g_dbus_connection_send_message (bus_connection_get_dbus_connection (context->connection),
-                                                       message, NULL, error);
+                                                       message,
+                                                       G_DBUS_SEND_MESSAGE_FLAGS_NONE,
+                                                       NULL, error);
     g_object_unref (message);
     return retval;
 }

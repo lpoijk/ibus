@@ -262,7 +262,8 @@ bus_dbus_impl_destroy (BusDBusImpl *dbus)
     for (p = dbus->connections; p != NULL; p = p->next) {
         GDBusConnection *connection = G_DBUS_CONNECTION (p->data);
         g_signal_handlers_disconnect_by_func (connection, bus_dbus_impl_connection_destroy_cb, dbus);
-        g_dbus_connection_close (connection);
+        /* FIXME should handle result? */
+        g_dbus_connection_close (connection, NULL, NULL, NULL);
         g_object_unref (connection);
     }
     g_list_free (dbus->connections);
@@ -932,8 +933,11 @@ bus_dbus_impl_forward_message_idle_cb (BusDBusImpl   *dbus)
         if (g_dbus_message_get_body (message) == NULL)
             g_dbus_message_set_signature (message, NULL);
         GError *error = NULL;
-        gboolean retval = g_dbus_connection_send_message (bus_connection_get_dbus_connection (dest_connection),
-                                        message, NULL, &error);
+        gboolean retval = g_dbus_connection_send_message (
+                                        bus_connection_get_dbus_connection (dest_connection),
+                                        message,
+                                        G_DBUS_SEND_MESSAGE_FLAGS_PRESERVE_SERIAL,
+                                        NULL, &error);
         if (!retval) {
             g_warning ("send error failed:  %s.", error->message);
             // message_print (message);
@@ -1046,7 +1050,9 @@ bus_dbus_impl_dispatch_message_by_rule_idle_cb (BusDBusImpl *dbus)
         BusConnection *connection = (BusConnection *)link->data;
         if (G_LIKELY (connection != data->skip_connection)) {
             g_dbus_connection_send_message (bus_connection_get_dbus_connection (connection),
-                                            data->message, NULL, NULL);
+                                            data->message,
+                                            G_DBUS_SEND_MESSAGE_FLAGS_PRESERVE_SERIAL,
+                                            NULL, NULL);
         }
     }
     g_list_free (recipients);

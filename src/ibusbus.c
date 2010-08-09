@@ -338,7 +338,8 @@ ibus_bus_destroy (IBusObject *object)
     }
 
     if (bus->priv->connection) {
-        g_dbus_connection_close (bus->priv->connection);
+        /* FIXME should use async close function */
+        g_dbus_connection_close_sync (bus->priv->connection, NULL, NULL);
         bus->priv->connection = NULL;
     }
 

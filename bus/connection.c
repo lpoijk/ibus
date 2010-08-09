@@ -89,7 +89,7 @@ bus_connection_destroy (BusConnection *connection)
         /* disconnect busconnection with dbus connection */
         g_object_set_qdata ((GObject *)connection->connection, BUS_CONNECTION_QUARK, NULL);
         if (!g_dbus_connection_is_closed (connection->connection)) {
-            g_dbus_connection_close (connection->connection);
+            g_dbus_connection_close (connection->connection, NULL, NULL, NULL);
         }
         g_object_unref (connection->connection);
         connection->connection = NULL;
