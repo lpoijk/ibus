@@ -19,8 +19,8 @@
  * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
  * Boston, MA 02111-1307, USA.
  */
-#ifndef __IBUS_IMPL_H_
-#define __IBUS_IMPL_H_
+#ifndef __BUS_IBUS_IMPL_H_
+#define __BUS_IBUS_IMPL_H_
 
 #include <ibus.h>
 #include "connection.h"

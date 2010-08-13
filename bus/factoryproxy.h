@@ -19,8 +19,8 @@
  * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
  * Boston, MA 02111-1307, USA.
  */
-#ifndef __FACTORY_PROXY_H_
-#define __FACTORY_PROXY_H_
+#ifndef __BUS_FACTORY_PROXY_H_
+#define __BUS_FACTORY_PROXY_H_
 
 #include <ibus.h>
 #include "connection.h"

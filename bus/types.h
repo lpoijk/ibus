@@ -19,8 +19,8 @@
  * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
  * Boston, MA 02111-1307, USA.
  */
-#ifndef __TYPES_H_
-#define __TYPES_H_
+#ifndef __BUS_TYPES_H_
+#define __BUS_TYPES_H_
 
 #include <glib.h>
 

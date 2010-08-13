@@ -19,8 +19,8 @@
  * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
  * Boston, MA 02111-1307, USA.
  */
-#ifndef __OPTION_H_
-#define __OPTION_H_
+#ifndef __BUS_OPTION_H_
+#define __BUS_OPTION_H_
 
 G_BEGIN_DECLS
 
