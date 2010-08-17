@@ -47,6 +47,7 @@ ibus_get_local_machine_id (void)
                                   &error)) {
             g_warning ("Unable to load /var/lib/dbus/machine-id: %s", error->message);
             g_error_free (error);
+            machine_id = "machine-id";
         }
         else {
             g_strstrip (machine_id);
