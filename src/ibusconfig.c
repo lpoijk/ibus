@@ -98,7 +98,7 @@ ibus_config_class_init (IBusConfigClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__STRING_STRING_VARIANT,
+            _ibus_marshal_VOID__STRING_STRING_VARIANT,
             G_TYPE_NONE,
             3,
             G_TYPE_STRING,

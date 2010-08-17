@@ -95,7 +95,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE, 0);
 
     /**
@@ -110,7 +110,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE, 0);
 
     /**
@@ -130,7 +130,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__OBJECT,
+            _ibus_marshal_VOID__OBJECT,
             G_TYPE_NONE,
             1,
             IBUS_TYPE_TEXT);
@@ -150,7 +150,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__UINT_UINT_UINT,
+            _ibus_marshal_VOID__UINT_UINT_UINT,
             G_TYPE_NONE,
             3,
             G_TYPE_UINT,
@@ -172,7 +172,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__INT_UINT,
+            _ibus_marshal_VOID__INT_UINT,
             G_TYPE_NONE,
             2,
             G_TYPE_INT,
@@ -197,7 +197,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__OBJECT_UINT_BOOLEAN,
+            _ibus_marshal_VOID__OBJECT_UINT_BOOLEAN,
             G_TYPE_NONE,
             3,
             IBUS_TYPE_TEXT,
@@ -216,7 +216,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE, 0);
 
     /**
@@ -231,7 +231,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE, 0);
 
     /**
@@ -250,7 +250,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__OBJECT_BOOLEAN,
+            _ibus_marshal_VOID__OBJECT_BOOLEAN,
             G_TYPE_NONE, 2,
             IBUS_TYPE_TEXT,
             G_TYPE_BOOLEAN);
@@ -267,7 +267,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE, 0);
 
     /**
@@ -282,7 +282,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE, 0);
 
     /**
@@ -303,7 +303,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__OBJECT_BOOLEAN,
+            _ibus_marshal_VOID__OBJECT_BOOLEAN,
             G_TYPE_NONE, 2,
             IBUS_TYPE_LOOKUP_TABLE,
             G_TYPE_BOOLEAN);
@@ -320,7 +320,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE, 0);
 
     /**
@@ -335,7 +335,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE, 0);
 
     /**
@@ -350,7 +350,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE, 0);
 
     /**
@@ -365,7 +365,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE, 0);
 
     /**
@@ -380,7 +380,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE, 0);
 
     /**
@@ -395,7 +395,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE,
             0);
 
@@ -416,7 +416,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__OBJECT,
+            _ibus_marshal_VOID__OBJECT,
             G_TYPE_NONE,
             1,
             IBUS_TYPE_PROP_LIST);
@@ -438,7 +438,7 @@ ibus_input_context_class_init (IBusInputContextClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__OBJECT,
+            _ibus_marshal_VOID__OBJECT,
             G_TYPE_NONE,
             1,
             IBUS_TYPE_PROPERTY);

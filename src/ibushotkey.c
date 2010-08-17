@@ -238,7 +238,7 @@ ibus_hotkey_profile_class_init (IBusHotkeyProfileClass *class)
             G_SIGNAL_RUN_LAST | G_SIGNAL_DETAILED,
             G_STRUCT_OFFSET (IBusHotkeyProfileClass, trigger),
             NULL, NULL,
-            ibus_marshal_VOID__UINT_POINTER,
+            _ibus_marshal_VOID__UINT_POINTER,
             G_TYPE_NONE,
             2,
             G_TYPE_UINT,

@@ -101,7 +101,7 @@ ibus_bus_class_init (IBusBusClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE,
             0);
 
@@ -118,7 +118,7 @@ ibus_bus_class_init (IBusBusClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE,
             0);
 
@@ -135,7 +135,7 @@ ibus_bus_class_init (IBusBusClass *class)
             G_SIGNAL_RUN_LAST,
             0,
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE,
             0);
 

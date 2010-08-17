@@ -75,7 +75,7 @@ ibus_proxy_class_init (IBusProxyClass *class)
             G_SIGNAL_RUN_LAST,
             G_STRUCT_OFFSET (IBusProxyClass, destroy),
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE, 0);
 }
 

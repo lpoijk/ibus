@@ -195,12 +195,12 @@ ibusenumtypes.c: $(ibus_headers) ibusenumtypes.c.template
 
 # gen marshal
 ibusmarshalers.h: ibusmarshalers.list
-	$(AM_V_GEN) $(GLIB_GENMARSHAL) --prefix=ibus_marshal $(srcdir)/ibusmarshalers.list --header --internal > $@.tmp && \
+	$(AM_V_GEN) $(GLIB_GENMARSHAL) --prefix=_ibus_marshal $(srcdir)/ibusmarshalers.list --header --internal > $@.tmp && \
 	mv $@.tmp $@
 
 ibusmarshalers.c: ibusmarshalers.h ibusmarshalers.list
 	$(AM_V_GEN) (echo "#include \"ibusmarshalers.h\""; \
-	$(GLIB_GENMARSHAL) --prefix=ibus_marshal $(srcdir)/ibusmarshalers.list --body --internal) > $@.tmp && \
+	$(GLIB_GENMARSHAL) --prefix=_ibus_marshal $(srcdir)/ibusmarshalers.list --body --internal) > $@.tmp && \
 	mv $@.tmp $@
 
 EXTRA_DIST =                    \

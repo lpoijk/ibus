@@ -83,7 +83,7 @@ ibus_object_class_init     (IBusObjectClass *class)
             G_SIGNAL_RUN_LAST,
             G_STRUCT_OFFSET (IBusObjectClass, destroy),
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE, 0);
 
     g_type_class_add_private (class, sizeof (IBusObjectPrivate));

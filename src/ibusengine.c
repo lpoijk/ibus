@@ -287,7 +287,7 @@ ibus_engine_class_init (IBusEngineClass *class)
             G_SIGNAL_RUN_LAST,
             G_STRUCT_OFFSET (IBusEngineClass, process_key_event),
             NULL, NULL,
-            ibus_marshal_BOOL__UINT_UINT_UINT,
+            _ibus_marshal_BOOL__UINT_UINT_UINT,
             G_TYPE_BOOLEAN,
             3,
             G_TYPE_UINT,
@@ -310,7 +310,7 @@ ibus_engine_class_init (IBusEngineClass *class)
             G_SIGNAL_RUN_LAST,
             G_STRUCT_OFFSET (IBusEngineClass, focus_in),
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE,
             0);
 
@@ -330,7 +330,7 @@ ibus_engine_class_init (IBusEngineClass *class)
             G_SIGNAL_RUN_LAST,
             G_STRUCT_OFFSET (IBusEngineClass, focus_out),
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE,
             0);
 
@@ -350,7 +350,7 @@ ibus_engine_class_init (IBusEngineClass *class)
             G_SIGNAL_RUN_LAST,
             G_STRUCT_OFFSET (IBusEngineClass, reset),
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE,
             0);
 
@@ -370,7 +370,7 @@ ibus_engine_class_init (IBusEngineClass *class)
             G_SIGNAL_RUN_LAST,
             G_STRUCT_OFFSET (IBusEngineClass, enable),
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE,
             0);
 
@@ -390,7 +390,7 @@ ibus_engine_class_init (IBusEngineClass *class)
             G_SIGNAL_RUN_LAST,
             G_STRUCT_OFFSET (IBusEngineClass, disable),
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE,
             0);
 
@@ -414,7 +414,7 @@ ibus_engine_class_init (IBusEngineClass *class)
             G_SIGNAL_RUN_LAST,
             G_STRUCT_OFFSET (IBusEngineClass, set_cursor_location),
             NULL, NULL,
-            ibus_marshal_VOID__INT_INT_INT_INT,
+            _ibus_marshal_VOID__INT_INT_INT_INT,
             G_TYPE_NONE,
             4,
             G_TYPE_INT,
@@ -439,7 +439,7 @@ ibus_engine_class_init (IBusEngineClass *class)
             G_SIGNAL_RUN_LAST,
             G_STRUCT_OFFSET (IBusEngineClass, set_capabilities),
             NULL, NULL,
-            ibus_marshal_VOID__UINT,
+            _ibus_marshal_VOID__UINT,
             G_TYPE_NONE,
             1,
             G_TYPE_UINT);
@@ -459,7 +459,7 @@ ibus_engine_class_init (IBusEngineClass *class)
             G_SIGNAL_RUN_LAST,
             G_STRUCT_OFFSET (IBusEngineClass, page_up),
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE,
             0);
 
@@ -478,7 +478,7 @@ ibus_engine_class_init (IBusEngineClass *class)
             G_SIGNAL_RUN_LAST,
             G_STRUCT_OFFSET (IBusEngineClass, page_down),
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE,
             0);
 
@@ -497,7 +497,7 @@ ibus_engine_class_init (IBusEngineClass *class)
             G_SIGNAL_RUN_LAST,
             G_STRUCT_OFFSET (IBusEngineClass, cursor_up),
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE,
             0);
 
@@ -516,7 +516,7 @@ ibus_engine_class_init (IBusEngineClass *class)
             G_SIGNAL_RUN_LAST,
             G_STRUCT_OFFSET (IBusEngineClass, cursor_down),
             NULL, NULL,
-            ibus_marshal_VOID__VOID,
+            _ibus_marshal_VOID__VOID,
             G_TYPE_NONE,
             0);
 
@@ -538,7 +538,7 @@ ibus_engine_class_init (IBusEngineClass *class)
             G_SIGNAL_RUN_LAST,
             G_STRUCT_OFFSET (IBusEngineClass, candidate_clicked),
             NULL, NULL,
-            ibus_marshal_VOID__UINT_UINT_UINT,
+            _ibus_marshal_VOID__UINT_UINT_UINT,
             G_TYPE_NONE,
             3,
             G_TYPE_UINT,
@@ -562,7 +562,7 @@ ibus_engine_class_init (IBusEngineClass *class)
             G_SIGNAL_RUN_LAST,
             G_STRUCT_OFFSET (IBusEngineClass, property_activate),
             NULL, NULL,
-            ibus_marshal_VOID__STRING_UINT,
+            _ibus_marshal_VOID__STRING_UINT,
             G_TYPE_NONE,
             2,
             G_TYPE_STRING,
@@ -584,7 +584,7 @@ ibus_engine_class_init (IBusEngineClass *class)
             G_SIGNAL_RUN_LAST,
             G_STRUCT_OFFSET (IBusEngineClass, property_show),
             NULL, NULL,
-            ibus_marshal_VOID__STRING,
+            _ibus_marshal_VOID__STRING,
             G_TYPE_NONE,
             1,
             G_TYPE_STRING);
@@ -605,7 +605,7 @@ ibus_engine_class_init (IBusEngineClass *class)
             G_SIGNAL_RUN_LAST,
             G_STRUCT_OFFSET (IBusEngineClass, property_hide),
             NULL, NULL,
-            ibus_marshal_VOID__STRING,
+            _ibus_marshal_VOID__STRING,
             G_TYPE_NONE,
             1,
             G_TYPE_STRING);
