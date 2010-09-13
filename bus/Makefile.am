@@ -31,6 +31,7 @@ INCLUDES =                \
 
 AM_CFLAGS =                        \
 	@GLIB2_CFLAGS@                 \
+	@GIO2_CFLAGS@                  \
 	@GTHREAD2_CFLAGS@              \
 	-DG_LOG_DOMAIN=\"IBUS\"        \
 	-DPKGDATADIR=\"$(pkgdatadir)\" \
@@ -41,6 +42,7 @@ AM_CFLAGS =                        \
 AM_LDADD =                  \
 	@GOBJECT2_LIBS@         \
 	@GLIB2_LIBS@            \
+	@GIO2_LIBS@             \
 	@GTHREAD2_LIBS@         \
 	$(libibus)              \
 	$(NULL)
@@ -94,25 +96,25 @@ BUILT_SOURCES =             \
 	marshalers.c            \
 	$(NULL)
 
-# test_registry_SOURCES =   \
+# test_registry_SOURCES =     \
 # 	registry.c              \
 # 	registry.h              \
 # 	factoryproxy.c          \
 # 	factoryproxy.h          \
 # 	test-registry.c         \
 # 	$(NULL)
-
-test_matchrule_SOURCES =    \
-	connection.c            \
-	matchrule.c             \
-	test-matchrule.c        \
-	$(NULL)
-test_matchrule_CFLAGS =     \
-	$(AM_CFLAGS)            \
-	$(NULL)
-test_matchrule_LDADD =      \
-	$(AM_LDADD)             \
-	$(NULL)
+# 
+# test_matchrule_SOURCES =    \
+# 	connection.c            \
+# 	matchrule.c             \
+# 	test-matchrule.c        \
+# 	$(NULL)
+# test_matchrule_CFLAGS =     \
+# 	$(AM_CFLAGS)            \
+# 	$(NULL)
+# test_matchrule_LDADD =      \
+# 	$(AM_LDADD)             \
+# 	$(NULL)
 
 # gen marshal
 marshalers.h: marshalers.list
